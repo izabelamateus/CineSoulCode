@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamentos</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="corpo">
+    <header>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="filmes2d.html">Filmes 2D</a></li>
+                <li><a href="filmes3d.html">Filmes 3D</a></li>
+                <li><a href="stopmotion.html">Filmes Stop Motion</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li style="position: absolute; right: 45px;"><input type="text" placeholder="Procurar" style="padding: 10px 20px ;"><button type="submit" style="color: #957DB3;">Procurar</button></li>
+            </ul>
+        </nav>
+</header>
+<main>
+    <button onclick="diminuir()">A--</button>
+    <button onclick="aumentar()">A++ </button>
+    <section>
+        <h1 class="titulo">Lançamentos</h1>
+    </section>
+    <section>
+        <article>
+            <div class="posicao">
+                <table >
+                    <tr>
+                        <td style="width: 200px;"><img src="img/soul.jpg" alt="Cartaz do filme Soul"></td>
+                                <td style="width: 800px; height: 350px; text-align: center; color: #251b33;"><h2><strong>Soul (2020)</strong></h2><br>
+                                <p>Joe é um professor de música que sonha em ser músico de jazz. Quando finalmente consegue uma vaga, sofre um acidente. Ele é transportado para um centro de almas, onde faz uma série de reflexões.</p>
+                                <br>
+                                <p>Duração: 1h 47m - Infantil/Comédia</p>
+                                <br>
+                                <p>Pontuação na plataforma: 4,0 estrelas</p>
+                                <br><br><br>
+                                <a href="https://www.youtube.com/watch?v=hWBxoH4-4yw" target="_blank" style="padding: 15px 30px; text-decoration: none;">Assistir ao trailer</a>
+                                <a href="https://www.youtube.com/watch?v=hWBxoH4-4yw" target="_blank" style="padding: 15px 30px; text-decoration: none;">Assistir ao filme</a>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;"><img src="img/familia.jpg" width="300px" alt="Cartaz do filme A família Mitchell e a revolta das máquinas"></td>
+                                <td style="width: 800px; height: 350px; text-align: center; color: #251b33;"><h2><strong>A família Mitchell e a revolta das máquinas (2021)</strong></h2><br>
+                                <p>Existe a família perfeita? Esse é um dos questionamentos de Katie, uma jovem que está fazendo uma viagem à faculdade com sua família. No meio do caminho as máquinas se revoltam contra os humanos e os Mitchell são os únicos que podem salvar a humanidade. </p>
+                                <br>
+                                <p>Duração: 1h 54m - Comédia/Ficção Científica</p>
+                                <br>
+                                <p>Pontuação na plataforma: 4,4 estrelas</p>
+                                <br><br><br>
+                                <a href="https://www.youtube.com/watch?v=_8kRAlYnmvU" target="_blank" style="padding: 15px 30px; text-decoration: none;">Assistir ao trailer</a>
+                                <a href="https://www.youtube.com/watch?v=_8kRAlYnmvU" target="_blank" style="padding: 15px 30px; text-decoration: none;">Assistir ao filme</a>
+                    </tr>
+                </table>
+                <a href="lancamentos.html" style="padding: 15px 30px; text-decoration: none; position: absolute; top: 1100; right: 45px;">Mais</a>
+            </div>
+        </article>
+    </section>
+
+</main>
+<footer style="position: absolute; top: 1200px; background-color: #69BECA; width: 100%;">
+    <hr>
+    <br>
+    <p style="color: #251b33;">Página desenvolvida por: Izabela Mateus - Estudante do curso de Front-End e Mobile na SoulCode Academy (2021)</p>
+    <br>
+    
+    Redes da SoulCodeAcademy:
+    <a href="https://br.linkedin.com/company/soulcodeacademy" target="_blank">Linkedin SoulCode</a>
+    <a href="https://www.instagram.com/soulcodeacademy/" target="_blank">Instagram SoulCode</a>
+    <a href="https://soulcodeacademy.org/" target="_blank">Site Oficial SoulCode</a>
+    <br>
+   
+</footer>
+<script>
+    tamanho = 10;
+    function diminuir() {
+        tamanho --;
+        document.body.style.fontSize = tamanho +"px";
+    }
+    function aumentar() {
+        tamanho ++;
+        document.body.style.fontSize = tamanho +"px";
+    }
+</script>
+</body>
+</html>

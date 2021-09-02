@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+        border: #4f3d69 solid 2px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+       background-color: #eff3f3;
+        position: relative;
+        top: 125px;
+        left: 265px;
+    }
+    table td{
+        width: 400px;
+        color: #251b33;
+    }
+    body{
+        background-color: #957DB3;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="filmes2d.html">Filmes 2D</a></li>
+                <li><a href="filmes3d.html">Filmes 3D</a></li>
+                <li><a href="stopmotion.html">Filmes Stop Motion</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table >
+                <tr>
+                    <td>
+            <form action="#" method="POST">
+                <br>
+                <h1>Formulário de Cadastro</h1>
+                <p>Preencha os campos abaixo para se cadastrar:</p>
+                <br>
+                
+                    <section>
+                        <h2>Informações de contato</h2>
+                        <br>
+                    <div>
+                        <label for="name"><strong>Nome: </strong> </label>
+                        <input type="text" id="name" size="35" placeholder="Maria da Silva"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email"><strong>E-mail: </strong> </label>
+                        <input type="email" id="email" size="34" placeholder="maria@email.com"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email"><strong>Confirmar e-mail: </strong> </label>
+                        <input type="email" id="email" size="24" placeholder="maria@email.com"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="endereco"><strong>Endereço: </strong></label>
+                        <input type="text" id="endereco" size="31" placeholder="Rua da Alvorada, 121"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cidade"><strong>Cidade: </strong> </label>
+                        <input type="text" id="cidade" size="33" placeholder="São Paulo"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefone"><strong>Telefone: </strong> </label> 
+                        <input type="tel" name="" id="telefone" size="1" placeholder="019" maxlength="3" />
+                        <input type="tel" name="" id="telefone" size="25" placeholder="999999999" maxlength="9"/>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <label for="usuario"><strong>Usuário: </strong></label>
+                        <input type="text" id="usuario" size="33" placeholder="mariasilva"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="senha"><strong>Senha: </strong> </label>
+                        <input type="password" id="senha" size="34" placeholder="*****"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="senha"><strong>Confirmar senha: </strong> </label>
+                        <input type="password" id="senha" size="24" placeholder="*****"/>
+                    </div>
+                    <br>
+                    </section>
+                    <section>
+                        <h2>Forma de pagamento</h2>
+                        <br>
+                        <div>
+                            <label for="card"><strong>Cartão de crédito: </strong></label>
+                            <select name="cartao" id="card">
+                                <option value="visa">Visa</option>
+                                <option value="mc">Mastercard</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="numberCard"><strong>Número do cartão: </strong></label>
+                            <input type="tel" id="numberCard" size="24" placeholder="**********">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="dateCard"><strong>Data de expiração:</strong></label>
+                            <input type="date" id="dateCard">
+                        </div>
+
+                    </section>
+                    <div>
+                        <br>
+                        <a href="lancamentos.html" style="padding: 15px 30px; text-decoration: none;">Finalizar Cadastro</a>
+                        <br>
+                    </div>
+                    <br>
+                
+            </form>
+            </td>
+            <td>
+                <h2>Já tenho cadastro</h2>
+                <section>
+                    <form action="#" method="POST">
+                        <br>
+                        <div>
+                            <label for="usuario"><strong>Usuário: </strong></label>
+                            <input type="text" id="usuario" size="33" placeholder="mariasilva"/>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="senha"><strong>Senha: </strong> </label>
+                            <input type="password" id="senha" size="34" placeholder="*****"/>
+                        </div>
+                        <br>
+                        <br>
+                        <a href="lancamentos.html" style="padding: 15px 30px; text-decoration: none;">Entrar</a>
+                    </form>
+                </section>
+            </td>
+            </tr>
+            </table>
+        </section>
+    </main>
+    <footer style="position: absolute; top: 1000px; background-color: #69BECA; width: 100%;">
+        <hr>
+        <br>
+        <p style="color: #251b33;">Página desenvolvida por: Izabela Mateus - Estudante do curso de Front-End e Mobile na SoulCode Academy (2021)</p>
+        <br>
+        Redes da SoulCode Academy: 
+        <a href="https://br.linkedin.com/company/soulcodeacademy" target="_blank">Linkedin SoulCode</a>
+        <a href="https://www.instagram.com/soulcodeacademy/" target="_blank">Instagram SoulCode</a>
+        <a href="https://soulcodeacademy.org/" target="_blank">Site Oficial SoulCode</a>
+        <br>
+       
+    </footer>
+</body>
+
+</html>
